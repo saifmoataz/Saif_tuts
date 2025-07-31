@@ -1,4 +1,5 @@
 {
+  "homepage": "https://saifmoataz.github.io/Saif_tuts",
   "name": "nextjs-shadcn",
   "version": "0.1.0",
   "private": true,
@@ -6,6 +7,8 @@
     "dev": "next dev -H 0.0.0.0 --turbopack",
     "build": "next build",
     "start": "next start",
+    "predeploy": "npm run build",
+    "deploy" :"gh-pages -d build",
     "lint": "bunx biome lint --write && bunx tsc --noEmit",
     "format": "bunx biome format --write"
   },
