@@ -4,14 +4,11 @@
   "version": "0.1.0",
   "private": true,
   "scripts": {
-    "dev": "next dev -H 0.0.0.0 --turbopack",
-    "build": "next build",
-    "start": "next start",
-    "predeploy": "npm run build",
-    "deploy": "gh-pages -d build",
-    "lint": "bunx biome lint --write && bunx tsc --noEmit",
-    "format": "bunx biome format --write"
+  "build": "next build",
+  "predeploy": "npm run build",
+  "deploy": "gh-pages -d out"
   },
+
   "dependencies": {
     "class-variance-authority": "^0.7.1",
     "clsx": "^2.1.1",
